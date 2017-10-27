@@ -11,7 +11,8 @@ def getHtml():
 #爬取结果  
     response = urllib.request.urlopen(url)  
   
-    data = response.read()  
+    data = response.read()
+   #打印爬取网页的各类信息
    #print(type(response))  
    #print(response.geturl())  
    #print(response.info())  
@@ -32,4 +33,3 @@ def getImage(html):
         imgName += 1
  
 print("All Done!")
-#打印爬取网页的各类信息
